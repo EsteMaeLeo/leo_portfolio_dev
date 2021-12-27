@@ -102,50 +102,53 @@ body {
     letter-spacing: 1px;
 }
 .about-class{
+    padding: 35px 35px;
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: space-around;
     flex-direction: row-reverse;
     align-items: center;
     position: relative;
  }
 .leo-pic{
-    border-radius: 60%;
-    max-width: 200px;
-    max-height: 200px;
+    border-radius: 50%;
+    max-width: 250px;
+    max-height: 250px;
     height: 30%;
     width: 30%;
-    margin-left: 30%;
+    margin-left: 70%;
     align-self:center;
 }
-
 
 .about-title {
    font-size: 22;
     color: var(--light-yel);
     border-bottom: 4px solid;
     padding-bottom: 20px;
-    text-align: center;
+    text-align: left;
     margin: 0 auto 35px auto;
     width: 100%;
 }
 .about-border {
-    border-color: var(--text-main);
+    border-color:var(--light-yel);
 }
       
-
- 
 .about-me{
     margin: 20px;
+    width: 60%;
     background: var(--back-blue);;
     color: var(--text-main);
     line-height:  1.5;
+    
+    position:absolute;
     text-align: justify;
-
-    padding:  25px;
-    margin-bottom: 15px;
+}
+.div-split{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 /* Media Query For Smaller Desktop Screens And Smaller */
