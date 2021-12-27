@@ -157,7 +157,11 @@ body {
     align-items: center;
     position: relative;
 }
-.proj-tm{
+.proj-tm,
+.proj-co,
+.proj-catalog,
+.proj-run
+{
     width: 25%;  
 }
 
