@@ -122,17 +122,14 @@ body {
     align-self:center;
 }
 
-.about-title {
-   font-size: 22;
+.general-title {
+    font-size: 22;
     color: var(--light-yel);
     border-bottom: 4px solid;
     padding-bottom: 20px;
     text-align: left;
     margin: 0 auto 35px auto;
     width: 100%;
-}
-.about-border {
-    border-color:var(--light-yel);
 }
       
 .about-me{
@@ -149,6 +146,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.work-general{
+    padding: 35px 35px;
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Media Query For Smaller Desktop Screens And Smaller */
