@@ -72,7 +72,7 @@ header nav ul li a:hover{
 
 body {
     color: var(--light-yel);
-    font-family: var(-font-main);  
+    font-family: var(--font-main);  
 
 }
 /*add style shadow to the name*/
@@ -94,8 +94,8 @@ body {
   }
 
 .label-name {
-    color: #FFFFFF;
-    text-shadow: 0 0 10px #FFFFFF;
+    color: var(--text-main); 
+    text-shadow: 0 0 10px var(--text-main); 
     background:rgba(78, 168, 201);
     padding: 18px;
     font-size: 24px;
@@ -112,12 +112,13 @@ body {
     align-items: center;
     position: relative;
  }
+ /*adjust into the profile picture*/
 .leo-pic{
     border-radius: 50%;
-    max-width: 250px;
-    max-height: 250px;
-    height: 30%;
-    width: 30%;
+    max-width: 230Px;
+    max-height: 230px;
+    height: 25%;
+    width: 25%;
     margin-left: 70%;
     align-self:center;
 }
@@ -199,6 +200,31 @@ body {
 	border-radius:10px 10px 10px 10px;
     color: var(--text-main);
 	box-shadow: 4px 4px 25px rgb(50, 56, 24);
+}
+.my-cv{
+    margin: 10px 20px 50px; 
+    display: flex;
+	flex-wrap:wrap-reverse;
+    flex-direction:column;
+	
+}
+.my-cv h2{
+    top: 20px;
+    padding: 10px;
+}
+.download-resume a{
+    
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration:none;
+    font-weight:bold;
+    color: var(--text-main);
+    cursor: grab;
+    border: 2px solid var(--text-main);
+    border-radius: 10px;
+}
+.download-resume a:hover{
+    background-color: #6f8f9b;
 }
 
 /* Media Query For Smaller Desktop Screens And Smaller */
