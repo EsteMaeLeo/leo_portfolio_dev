@@ -84,7 +84,6 @@ body {
     background-attachment: fixed;
     background-position: 90%;
     padding: 250px 35px;
-    
     display: flex;
     align-items: flex-start;
     justify-content: left;
@@ -102,7 +101,7 @@ body {
     letter-spacing: 1px;
 }
 .about-class{
-    padding: 35px 35px;
+    padding: 60px 35px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -112,34 +111,33 @@ body {
     align-items: center;
     position: relative;
  }
+ .general-title {
+    font-size: 22px;
+    color: var(--light-yel);
+    border-bottom: 4px solid yellow;
+    padding-bottom: 2px;
+    text-align: center;
+    margin: 0 0 35px 0px;
+    width: 100%;
+}
  /*adjust into the profile picture*/
 .leo-pic{
     border-radius: 50%;
-    max-width: 230Px;
-    max-height: 230px;
+    max-width: 200Px;
+    max-height: 200px;
     height: 25%;
     width: 25%;
-    margin-left: 70%;
+    margin-left: auto;
     align-self:center;
 }
 
-.general-title {
-    font-size: 22;
-    color: var(--light-yel);
-    border-bottom: 4px solid yellow;
-    padding-bottom: 20px;
-    text-align: left;
-    margin: 0 auto 35px auto;
-    width: 100%;
-}
-      
 .about-me{
-    margin: 30px;
-    width: 60%;
+    
+    width: 65%;
     background: var(--back-blue);;
     color: var(--text-main);
     line-height:  1.5;
-    position:absolute;
+    position: absolute;
     text-align: justify;
 }
 .div-split{
@@ -155,10 +153,11 @@ body {
     text-decoration: none;
     display: flex;
 	flex-wrap: wrap;
-	padding: 35px 100px;
+	padding:50px 100px;
 	width: 100%;
 	margin: 30px 0px;
 }
+
 .project-article{
     display: flex;
 	flex-wrap: wrap;
@@ -222,11 +221,15 @@ body {
     cursor: grab;
     border: 2px solid var(--text-main);
     border-radius: 10px;
+    box-shadow: 0 5px 0 rgb(139, 135, 135);
 }
 .download-resume a:hover{
     background-color: #6f8f9b;
 }
-
+.download-resume a:active {
+    box-shadow: none;
+    top: 5px;
+  }
 /* Media Query For Smaller Desktop Screens And Smaller */
 @media screen and (max-width: 980px) {
 
