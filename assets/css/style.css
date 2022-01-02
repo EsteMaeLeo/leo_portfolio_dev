@@ -1,14 +1,16 @@
 :root {
     /*Colors*/
-    --back-blue: #0e8dbc;
+    --back-blue: #2F5C8F;
     --text-main: #FFFFFF; 
     --light-yel: #dace5b;
     /*fonts*/
     --font-main: 'Oxygen', Helvetica, sans-serif;
+    --size-title: 22px;
 }
 
 *{
     background-color: var(--back-blue);
+    font: var(--font-main);
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
@@ -27,8 +29,6 @@
     position: sticky;
     top: 0;
     position: -webkit-sticky;
-    position: sticky;
-    top: 0;
     z-index: 9999;
 }
 
@@ -95,10 +95,12 @@ body {
 .label-name {
     color: var(--text-main); 
     text-shadow: 0 0 10px var(--text-main); 
-    background:rgba(78, 168, 201);
+    background:rgba(78, 168, 201, 0.3);
     padding: 18px;
     font-size: 24px;
     letter-spacing: 1px;
+    border-radius:40px 40px 40px 40px;
+    
 }
 .about-class{
     padding: 60px 35px;
@@ -112,7 +114,7 @@ body {
     position: relative;
  }
  .general-title {
-    font-size: 22px;
+    font-size: var(--size-title);
     color: var(--light-yel);
     border-bottom: 4px solid yellow;
     padding-bottom: 2px;
@@ -146,7 +148,7 @@ body {
     justify-content: space-around;
 }
 .work-general{
-
+     
     flex-direction: row;
     align-items: center;
     position: relative;
@@ -205,11 +207,13 @@ body {
     display: flex;
 	flex-wrap:wrap-reverse;
     flex-direction:column;
+    
 	
 }
 .my-cv h2{
     top: 20px;
     padding: 10px;
+    font-size: var(--size-title);
 }
 .download-resume a{
     
@@ -230,6 +234,60 @@ body {
     box-shadow: none;
     top: 5px;
   }
+
+  .contact-info{
+    /*border: 2px solid white;*/
+   
+    background: url("../images/roca.jpg") no-repeat center center fixed; 
+    /*opacity: 0.5;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:contain;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 250px 35px;
+    margin: 0px 0px 10px 0;
+	overflow: hidden;
+
+  }
+.contact-me{
+    background:rgba(var(----back-blue), 0); 
+    font-size: var(--size-title);
+    padding: 10px 5px 20px;
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: left;
+    
+    
+  } 
+  .contact-list{
+    background-color: transparent; 
+    line-height:  2;
+    max-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid var(--light-yel);
+    text-align: left;
+    flex: 2 1 25px;
+    padding: 10px;
+
+
+ } 
+ .contact-list a{
+    background-color: transparent; 
+    text-decoration: none;
+    color:  var(--text-main);
+
+ } 
+ .contact-list  ul{
+ 
+    list-style: none;
+    
+ }
+
 /* Media Query For Smaller Desktop Screens And Smaller */
 @media screen and (max-width: 980px) {
 
